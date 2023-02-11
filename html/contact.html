@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="top-page">
+			<div class="container">
+				<div class="bread-crumbs">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li>Контакты</li>
+					</ul>
+				</div>
+				<div class="title-section">Контакты</div>
+			</div>
+		</section>
+		<section class="contact-page">
+			<div class="container">
+				<div class="contact-wrap">
+					<div class="contact-item">
+						<div class="contact-item__media">
+							<img src="../static/images/general/contact-1.svg" alt="contact">
+						</div>
+						<div class="contact-item__title">
+                            Звоните:
+						</div>
+                        <div class="contact-item__text">
+                            <a href="tel:+73822342285">+7 (3822) 34-22-85</a>
+                        </div>
+					</div>
+                    <div class="contact-item">
+                        <div class="contact-item__media">
+                            <img src="../static/images/general/contact-2.svg" alt="contact">
+                        </div>
+                        <div class="contact-item__title">
+                            Пишите:
+                        </div>
+                        <div class="contact-item__text">
+                            <a href="mailto:info@exsantex.ru">info@exsantex.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__media">
+                            <img src="../static/images/general/contact-3.svg" alt="contact">
+                        </div>
+                        <div class="contact-item__title">
+                            Приезжайте:
+                        </div>
+                        <div class="contact-item__text">
+                            Томск, ул. Правды, 66
+                        </div>
+                    </div>
+				</div>
+				<div class="contact-map">
+					<iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=ru&amp;q=Tomsk+(Tomsk)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="question">
+			<div class="container">
+				<div class="question-desc">
+					<div class="title-section">
+						Если у вас <span> остались вопросы...</span>
+					</div>
+					<div class="text-section">
+						Оставьте свои контактные данные в этой форме.
+						Наш мастер обязательно свяжеться с вами и ответит на все вопросы
+					</div>
+					<div class="question-call">
+						<span>Или звоните и пишите самостоятельно:</span>
+						<a href="tel:+73822342285" target="_blank">+7 (3822) <b>34-22-85</b></a>
+					</div>
+					<div class="question-email">
+						<a href="mailto:info@exsantex.ru" target="_blank">info@exsantex.ru</a>
+					</div>
+				</div>
+				<div class="question-form">
+					<form action="#">
+						<label for="question-name">Как вас зовут?</label>
+						<input type="text" name="questionName" id="question-name" placeholder="Дмитрий ">
+						<label for="question-phone">Номер телефона</label>
+						<input type="tel" name="questionPhone" id="question-phone" placeholder="+ 7 XXX XXX XX XX">
+						<label for="question-message">Ваш вопрос</label>
+						<textarea name="message" id="question-message" placeholder="Опишите проблему с которой вы столкнулись...."></textarea>
+						<div class="question-form__bottom">
+							<button type="submit" class="btn-primary">
+								Отправить
+							</button>
+							<div class="politic">
+								Нажимая кнопку вы соглашаетесь с <a href="#" target="_blank">политикой конфидициальности</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="question-media" style="background-image: url('../static/images/general/question-media__bg.svg')">
+					<img src="../static/images/general/question-media.png" alt="">
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+<!--	<input type="hidden" class="zoom" value="16.5">-->
+<!--	<input type="hidden" class="mapLat" value="40.57884985826131">-->
+<!--	<input type="hidden" class="mapLng" value="-73.9595186019691">-->
+<!--	<input type="hidden" class="mapIcon" value="../static/images/general/Pin.svg">-->
+</div>
+@@include('./includes/_scripts.html')
+<!--<script type="text/javascript" src="../static/js/map.js"></script>-->
+<!--<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt8S8uRnvbEkGevo-cdzjBRCRPGfsfbYI&callback=initMap&libraries=&v=weekly"></script>-->
+
+</body>
+</html>

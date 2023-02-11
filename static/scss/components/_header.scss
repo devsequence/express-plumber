@@ -1,0 +1,226 @@
+.header{
+  &-top{
+    background: $primary;
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-nav{
+    padding: 10px 0 7px;
+    ul{
+      display: flex;
+    }
+    li{
+      margin: 0 32px 0 30px;
+      position: relative;
+      &:after{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -30px;
+        height: 100%;
+        width: 1px;
+        opacity: .3;
+        background-image: url("data:image/svg+xml,%3Csvg width='1' height='2' viewBox='0 0 1 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='1' width='1' height='1' fill='white'/%3E%3C/svg%3E%0A");
+        background-repeat: repeat;
+      }
+      &:first-of-type{
+        margin-left: 15px;
+      }
+      &:last-of-type{
+        margin-right: 0;
+        &:after{
+          display: none;
+        }
+      }
+    }
+    a{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+  &-call{
+    width: 100%;
+    max-width: 200px;
+    button{
+      background: $secondary;
+      width: 100%;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 15px;
+    }
+  }
+  &-center{
+    padding: 9px 0 12px;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-logo{
+    display: flex;
+    margin-right: 5px;
+
+    &__text{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $default;
+      max-width: 165px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid #E2E2E2;
+      margin-left: 25px;
+      padding-left: 15px;
+    }
+  }
+  &-form{
+    width: 430px;
+    input{
+      width: 100%;
+    }
+  }
+  &-social{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    &__phone{
+      text-align: right;
+      padding-right: 24px;
+      span{
+        display: inline-block;
+        background-position: center left;
+        padding-left: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5_26)'%3E%3Cpath d='M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z' fill='%23009FEF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5_26'%3E%3Crect width='14' height='14' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: $default;
+      }
+      a{
+        color: $default;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        &:hover{
+          color: $secondary;
+        }
+        b{
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+
+    }
+    &__messenger{
+      display: flex;
+      a{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-left: 4px;
+        &:first-of-type{
+          margin-left: 0;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-bottom{
+    background: #FFFFFF;
+    padding: 14px 0 16px;
+    border-top: 1px solid #E2E2E2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+    ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    li{
+      max-width: 120px;
+      width: 100%;
+      ul{
+        display: none;
+      }
+    }
+    a{
+      display: flex;
+      align-items: center;
+      color: $default;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 16px;
+      img{
+        width: 40px;
+      }
+      span{
+        width: calc(100% - 40px);
+        margin-left: 17px;
+        color: $default;
+      }
+    }
+  }
+}
+.header-btn{
+  margin: 0 0 0 auto;
+  display: none;
+  width: 32px;
+  height: 22px;
+  position: relative;
+  &:before, &:after, span{
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    right: 0;
+    transition: all ease 300ms;
+  }
+  &:before,
+  &:after{
+    content: '';
+  }
+  &:before{
+    width: 26px;
+    top: 0;
+  }
+  &:after{
+    width: 19px;
+    top: calc(100% - 2px);
+  }
+  span{
+    width: 32px;
+    top: 50%;
+    margin-top: -1px;
+  }
+  &.active{
+    &:before,
+    &:after{
+      content: '';
+      width: 100%;
+      top: 50%;
+      margin-top: -2px;
+    }
+    span{
+      opacity: 0;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+}
