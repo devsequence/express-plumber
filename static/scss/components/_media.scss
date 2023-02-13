@@ -28,6 +28,14 @@
 
 }
 @media screen and (max-width: 1230px) {
+  .page-content {
+    padding-top: 196px;
+  }
+  .team-slider, .reviews-slider, .work-slider {
+    .slick-list{
+      margin: 0 -15px 0;
+    }
+  }
   .header{
     &-form{
       width: 260px;
@@ -224,6 +232,37 @@
       line-height: 36px;
     }
   }
+  .header-logo{
+    margin-right: 10px;
+    width: 140px;
+    a{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .header-social{
+    width: 100%;
+    max-width: 130px;
+    padding-right: 0;
+    &__phone{
+      font-size: 14px;
+      line-height: 14px;
+      padding-right: 0;
+      a{
+        font-size: 14px;
+        line-height: 16px;
+        b{
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+    &__messenger{
+      display: none;
+    }
+  }
   .header{
     display: grid;
     &-top { grid-area: 3 / 1 / 4 / 2; }
@@ -337,10 +376,12 @@
       display: block;
     }
     &-center{
-      .header-social{
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+      .header-form{
         display: none;
       }
     }
+
     &-form{
       margin: 0 auto;
     }
@@ -367,6 +408,9 @@
         left: 0;
       }
     }
+  }
+  .page-content{
+    padding-top: 68px;
   }
   .title-section{
     font-size: 36px;
